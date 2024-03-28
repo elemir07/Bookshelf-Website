@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Emir</title>
+    <link rel="stylesheet" href="emircss/emirbookshelf.css">
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_bar_title">Emir Bookshelf Website</h1>
+        <form id="searchForm">
+            <input class="" type="text" id="searchInput" name="" placeholder="Telusuri Bukumu ..." />
+        </form>
+    </header>
+    <main>
+        <div class="container">
+            <section class="input-sec">
+                <h2>Isi Menambahkan Buku Baru</h2>
+                <form id="inputBuku">
+                    <div class="input">
+                        <label for="inputTitle">Judul Buku</label>
+                        <input id="inputTitle" type="text" required placeholder="Masukkan Nama Judul Buku" />
+                    </div>
+                    <div class="input">
+                        <label for="inputAuthor">Penulis Buku</label>
+                        <input id="inputAuthor" type="text" required placeholder="Masukkan Nama Penulis Buku" />
+                    </div>
+                    <div class="input">
+                        <label for="inputYear">Tahun Terbit</label>
+                        <input id="inputYear" type="number" required placeholder="Masukkan Tahun Terbit Buku" />
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBukuSelesai" id="inputBukuSelesaiLabel">Buku selesai dibaca</label>
+                        <input id="inputBukuSelesai" type="checkbox">
+                    </div>
+                    <button id="submitBuku">Tambah Buku ke Rak <span id="tipeBuku"><strong>Belum Dibaca</strong></span></button>
+                    <button id="editBuku">Edit Buku dan Masukkan ke Rak <span id="editTipeBuku"><strong>Belum Dibaca</strong></strong></span></button>
+                </form>
+            </section>
+
+            <section class="book_emir">
+                <h2>List Buku Belum Selesai Dibaca</h2>
+                <div id="listBelum" class="listBuku">
+                </div>
+            </section>
+            <section class="book_emir">
+                <h2>List Buku Sudah Selesai Dibaca</h2>
+                <div id="listSudah" class="listBuku">
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <section class="book_emir">
+                <article class="profile card">
+                    <h2>Bidota Profile</h2>
+                    <p>Submission Tugas Akhir</p>
+                    <figure>
+                        <img src="emirimg/profile.png" alt="Profile Image" />
+                        <figcaption>El Emir Di Haryanto</figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="book_emir">
+                <h2>Hasil Pencarian</h2>
+                <section id="searchResults" style="display: none;">
+                    <div id="searchList" class="listBuku">
+                    </div>
+                </section>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>By El Emir Di Haryanto Mahasiswa Teknik Universitas Pancasila &#169; 2024, Dicoding Academy</p>
+    </footer>
+    <script src="emirjs/emirbookshelf.js"></script>
+</body>
+
+</html>
